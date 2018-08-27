@@ -74,7 +74,7 @@ section ul {
 
 
 /*Media Queries*/
-@media only screen and (max-width: 480px) and (orientation : portrait) {
+@media only screen and (max-width: 600px) and (orientation : portrait) {
   .grid {
     display: block;
   }
