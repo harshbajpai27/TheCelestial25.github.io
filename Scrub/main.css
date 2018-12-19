@@ -31,7 +31,8 @@ section {
 
 h1 {
     font-size: 3em;
-    background: #fff;
+    background: purple;
+    color: white;
     display: inline-block;
     padding: 10px 15px;
     border-radius: 5px;
