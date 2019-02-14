@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp|Uncial+Antiqua');
+
+body {
+  background: white;
+}
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.heading {
+  font-size: 30px;
+}
+
+.centered {
+  background: white;
+  /*background-image: url('budgie.jpg');*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;/*#173665;*/
+  text-align: center;
+  /*min-height: 100vh;*/
+  font-size: 60px;
+  font-family: 'Uncial Antiqua', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.budgie-container {
+  z-index: 5;
+  margin: 50;
+  position: absolute;
+  top: 15%;
+  right: 0px;
+  width: 500px;
+  padding: 10px;
+}
+
+.logo-container {
+  z-index: 5;
+  margin: 50;
+  position: absolute;
+  top: 15%;
+  left: 0px;
+  width: 500px;
+  padding: 10px;
+}
+
+/*div {
+  animation: neon .08s ease-in-out infinite alternate;
+}*/
+#count {
+  margin-top: 50px;
+}
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
+}
+
+.tech-slideshow {
+  height: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.filler {
+  position: relative;
+  height: 300px;
+}
+
+.tech-slideshow > div {
+  height: 300px;
+  width: 4500px;
+  background: url(spons.png);
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 12s linear infinite;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+
+@media only screen and (min-width: 671px) {
+  #count {
+    font-size: 70px;
+  }
+}
